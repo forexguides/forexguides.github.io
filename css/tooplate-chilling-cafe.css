@@ -32,7 +32,7 @@ body {
 .tm-main-content { background-color: #ffffff; }
 
 #tm-intro-img {
-  background-image: url(../img/chilling-cafe-01.jpg);
+  background-image: url(../img/forex-trading-desk.jpg);
   background-position: center;
   background-size: cover;
   min-height: 425px;
@@ -137,6 +137,23 @@ figcaption span {
 .tm-special-item {
   padding-left: 15px;
   padding-right: 15px;
+  width: 33%;
+}
+
+.tm-img-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.tm-special-item-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 hr {
@@ -195,6 +212,7 @@ a { transition: all 0.3s ease; }
   .tm-special-item {
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
   }
   .tm-special-items {
     margin-left: -10px;
