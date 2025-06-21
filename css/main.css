@@ -49,9 +49,6 @@ body {
 .tm-page-header {
   display: inline-block;
   vertical-align: baseline;
-  margin-top: 20px;
-  margin-bottom: 35px;
-  font-size: 2.1rem;
   font-weight: 400;
 }
 
@@ -233,7 +230,9 @@ a { transition: all 0.3s ease; }
   justify-content: center;
 }
 
-@media (max-width: 550px) {
+@media screen and (min-width: 778px) {}
+
+@media screen and (min-width: 550px) {
   .tm-special-item {
     padding-left: 10px;
     padding-right: 10px;
@@ -244,12 +243,43 @@ a { transition: all 0.3s ease; }
     margin-right: -10px;
   }
   .tm-page-header {
-    font-size: 1.8rem;
-    margin: 0 0 15px 0;
+    font-size: 2.1rem;
+    margin: 20px 0 35px 0;
+  }
+  .flex-md-column {
+      flex-direction: column!important
+  }
+  .flex-md-column-reverse {
+      flex-direction: column-reverse!important
+  }
+  .pt-md-5 {
+    padding-top: 3rem !important;
+  }
+  .pt-md-0 {
+    padding-top: 0rem !important;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 550px) {
+  .tm-page-header {
+    font-size: 1.8rem;
+    margin: 0 0 15px 0;
+  }
+  .flex-sm-column {
+      flex-direction: column!important
+  }
+  .flex-sm-column-reverse {
+      flex-direction: column-reverse!important
+  }
+  .pt-sm-5 {
+    padding-top: 3rem !important;
+  }
+  .pt-sm-0 {
+    padding-top: 0rem !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .tm-special-item {
     padding-left: 5px;
     padding-right: 5px;
@@ -260,7 +290,7 @@ a { transition: all 0.3s ease; }
   }
 }
 
-@media (max-width: 430px) {
+@media screen and (max-width: 430px) {
   .tm-responsive-table { overflow-x: auto; }
   table { width: auto; }
   .tm-special-items { flex-direction: column; }
@@ -271,6 +301,18 @@ a { transition: all 0.3s ease; }
   }
 }
 
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+    flex-direction: column
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse!important
+}
+
 .p-5 {
   padding: 3rem !important;
 }
@@ -279,12 +321,20 @@ a { transition: all 0.3s ease; }
   padding-top: 3rem !important;
 }
 
+.pt-4 {
+  padding-top: 1.5rem !important;
+}
+
 .py-4 {
   padding-top: 1.5rem !important;
 }
 
 .px-2 {
   padding-top: 0.5rem !important;
+}
+
+.pt-0 {
+  padding-top: 0rem !important;
 }
 
 .fs-1 {
