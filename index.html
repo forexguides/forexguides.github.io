@@ -13,9 +13,9 @@
 
 <body>
   <div class="tm-container">
-    <div class="tm-text-white tm-page-header-container">
-      <i class="fas fa-yen-sign fa-2x tm-page-icon"></i>
-      <h1 class="tm-page-header">Recommended Forex Brokers</h1>
+    <div class="tm-page-header-container">
+      
+      <h1 class="tm-page-header"><i class="fa-ff fst-normal fa-yen-sign tm-page-icon fw-semibold"></i> Recommended Forex Brokers</h1>
     </div>
     <div class="tm-main-content">
       <div id="tm-intro-img"></div>
@@ -28,8 +28,11 @@
           First month in, and you'll feel the difference, with instant execution during peak hours
         </p>
         <p class="tm-mb-0">
-          The low fees and transparent pricing will finally let you focus on trading - not hunting for the fine print.
+          The low fees and transparent pricing will finally let you focus on trading - not hunting for the fine print. Find below what we recommend!
         </p>
+        <div class="v-stack pt-5">
+          <a href="#" class="clickable">Start Trading</a>
+        </div>
       </section>
 
       <!-- Platform Comparison -->
@@ -169,24 +172,6 @@
     </footer>
   </div>
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script>
-    $(function () {
-      // Adjust intro image height based on width.
-      $(window).resize(function () {
-        var img = $("#tm-intro-img");
-        var imgWidth = img.width();
-
-        // 640x425 ratio
-        var imgHeight = (imgWidth * 425) / 640;
-
-        if (imgHeight < 300) {
-          imgHeight = 300;
-        }
-
-        img.css("min-height", imgHeight + "px");
-      });
-    });
-  </script>
 </body>
 
 </html>

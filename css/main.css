@@ -1,15 +1,25 @@
 /*
-    Background color:       #3a4a58
-    Title color:            #996633
-    Text color:             #666666
+    Background color:       #f5f5f5 -- #3a4a58
+    Title color:            #1e1e1e -- #996633
+    Text color:             #323232 -- #666666
     Text Dark color:        #333333
     Table Heading color:    #C4CDD6
     Table Alternate color:  #e5e8ed 
 */
 
+:root{
+  --primary-color: #323232;
+  --link-primary-color: #007bff;
+  --link-secondary-color: #0064c8;
+  --header-color: #1e1e1e;
+  --background-color: #f5f5f5;
+  --link-background-color: white;
+  --link-background-secondary-color: #f0f0f0;
+}
+
 body {
-  background-color: #3a4a58;
-  color: #8c8c8c;
+  background-color: var(--background-color);
+  color: var(--primary-color);
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -29,7 +39,7 @@ body {
   background-image: url(../img/forex-trading-desk.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 425px;
+  height: 30vh;
 }
 
 .tm-text-white { color: white; }
@@ -52,7 +62,7 @@ body {
 }
 
 .tm-section-header {
-  color: #996633;
+  color: var(--header-color);
   text-align: center;
   font-weight: 400;
   font-size: 1.5rem;
@@ -186,6 +196,22 @@ hr {
 }
 
 a { transition: all 0.3s ease; }
+
+.clickable {
+  color: var(--link-primary-color);
+  background-color: var(--link-background-color);
+  padding: 12px 30px;
+  text-decoration: none;
+  border: 2px solid var(--link-primary-color);
+  border-radius: 100px;
+  transition: all 0.3s ease;
+}
+
+.clickable:hover {
+  color: var(--link-secondary-color);
+  background-color: var(--link-background-secondary-color);
+}
+
 .tm-contact-link:hover { color: #808e9e; }
 
 .tm-footer-text {
@@ -202,6 +228,11 @@ a { transition: all 0.3s ease; }
 
 .tm-footer-link:hover { color: #c5ced8; }
 
+.v-stack {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 550px) {
   .tm-special-item {
     padding-left: 10px;
@@ -211,6 +242,10 @@ a { transition: all 0.3s ease; }
   .tm-special-items {
     margin-left: -10px;
     margin-right: -10px;
+  }
+  .tm-page-header {
+    font-size: 1.8rem;
+    margin: 0 0 15px 0;
   }
 }
 
@@ -234,4 +269,56 @@ a { transition: all 0.3s ease; }
     margin-bottom: 0;
     line-height: 1;
   }
+}
+
+.p-5 {
+  padding: 3rem !important;
+}
+
+.pt-5 {
+  padding-top: 3rem !important;
+}
+
+.py-4 {
+  padding-top: 1.5rem !important;
+}
+
+.px-2 {
+  padding-top: 0.5rem !important;
+}
+
+.fs-1 {
+    font-size: calc(1.375rem + 1.5vw)!important
+}
+
+.fs-2 {
+    font-size: calc(1.325rem + .9vw)!important
+}
+
+.fs-3 {
+    font-size: calc(1.3rem + .6vw)!important
+}
+
+.fs-4 {
+    font-size: calc(1.275rem + .3vw)!important
+}
+
+.fs-5 {
+    font-size: 1.25rem!important
+}
+
+.fs-6 {
+    font-size: 1rem!important
+}
+
+.fst-normal {
+    font-style: normal!important
+}
+
+.fw-semibold {
+  font-weight: 600!important
+}
+
+.fa-ff {
+    font-family: "Font Awesome 5 Free";
 }
