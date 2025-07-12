@@ -1,12 +1,3 @@
-/*
-    Background color:       #f5f5f5 -- #3a4a58
-    Title color:            #1e1e1e -- #996633
-    Text color:             #323232 -- #666666
-    Text Dark color:        #333333
-    Table Heading color:    #C4CDD6
-    Table Alternate color:  #e5e8ed 
-*/
-
 :root{
   --primary-color: white;
   --link-primary-color: white;
@@ -246,7 +237,12 @@ a { transition: all 0.3s ease; }
 
 .tm-contact-link:hover { color: #808e9e; }
 
-.tm-footer-text {
+footer p {
+  color: #333333;
+  font-size: small;
+}
+
+.tm-copyright-text {
   font-size: 0.9rem;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -289,6 +285,9 @@ a { transition: all 0.3s ease; }
   }
   .pt-md-5 {
     padding-top: 3rem !important;
+  }
+  .pt-md-4 {
+    padding-top: 1.5rem !important;
   }
   .pt-md-0 {
     padding-top: 0rem !important;
@@ -346,6 +345,10 @@ a { transition: all 0.3s ease; }
 
 .flex-column-reverse {
     flex-direction: column-reverse!important
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 .p-5 {
