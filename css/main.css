@@ -21,38 +21,38 @@ body {
   margin: 0;
 }
 
-.tm-container {
+.container {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.tm-main-content { background-color: var(--inner-background-color); }
+.main-content { background-color: var(--inner-background-color); }
 
-#tm-intro-img {
+#intro-img {
   background-image: url(../img/forex-trading-desk.jpg);
   background-position: center;
   background-size: cover;
   height: 30vh;
 }
 
-.tm-text-white { color: white; }
+.text-white { color: white; }
 
-.tm-page-header-container { text-align: center; }
+.page-header-container { text-align: center; }
 
-.tm-page-header {
+.page-header {
   display: inline-block;
   vertical-align: baseline;
   font-weight: 400;
 }
 
-.tm-page-icon {
+.page-icon {
   display: inline-block;
   vertical-align: baseline;
   padding: 15px;
 }
 
-.tm-section-header {
+.section-header {
   color: var(--header-color);
   text-align: center;
   font-weight: 400;
@@ -103,7 +103,7 @@ td {
   padding: 10px 15px;
 }
 
-.tm-text-left { text-align: left; }
+.text-left { text-align: left; }
 
 th {
   color: #333333;
@@ -115,19 +115,19 @@ th {
 
 tr:nth-child(odd) { background-color: #e5e8ed; }
 
-tr.tm-tr-header {
+tr.tr-header {
   background-color: #c4cdd6;
   height: 50px;
 }
 
-.tm-section {
+.section {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
 }
 
-.tm-section-small {
+.section-small {
   max-width: 490px;
   margin-left: auto;
   margin-right: auto;
@@ -139,7 +139,7 @@ p {
   line-height: 1.7;
 }
 
-.tm-mb-0 { margin-bottom: 0; }
+.mb-0 { margin-bottom: 0; }
 img { max-width: 100%; }
 figure { margin: 0; }
 figcaption { text-align: center; }
@@ -150,31 +150,31 @@ figcaption span {
   font-size: 18px;
 }
 
-.tm-item-name {
+.item-name {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.tm-special-items {
+.special-items {
   display: flex;
   margin-left: -15px;
   margin-right: -15px;
 }
 
-.tm-special-item {
+.special-item {
   padding-left: 15px;
   padding-right: 15px;
   width: 33%;
 }
 
-.tm-img-container {
+.img-container {
   position: relative;
   width: 100%;
   padding-bottom: 100%;
   overflow: hidden;
 }
 
-.tm-special-item-img {
+.special-item-img {
   position: absolute;
   top: 0;
   left: 0;
@@ -188,15 +188,15 @@ hr {
   border: 0.5px solid #ccc;
 }
 
-.tm-social-icons {
+.social-icons {
   text-align: center;
   margin-top: 30px;
 }
 
-.tm-social-icons i { font-size: 1.2rem; }
-.tm-social-link-container { display: inline-block; }
+.social-icons i { font-size: 1.2rem; }
+.social-link-container { display: inline-block; }
 
-.tm-social-link {
+.social-link {
   color: white;
   background-color: #c5ced8;
   border-radius: 2px;
@@ -210,9 +210,9 @@ hr {
   transition: all 0.3s ease;
 }
 
-.tm-social-link:hover { background-color: #808e9e; }
+.social-link:hover { background-color: #808e9e; }
 
-.tm-contact-link {
+.contact-link {
   color: #333333;
   font-weight: 600;
   text-decoration: none;
@@ -235,26 +235,26 @@ a { transition: all 0.3s ease; }
   background-color: var(--link-background-secondary-color);
 }
 
-.tm-contact-link:hover { color: #808e9e; }
+.contact-link:hover { color: #808e9e; }
 
 footer p {
   color: #333333;
   font-size: small;
 }
 
-.tm-copyright-text {
+.copyright-text {
   font-size: 0.9rem;
   margin-top: 30px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.tm-footer-link {
+.footer-link {
   color: #fff;
   text-decoration: none;
 }
 
-.tm-footer-link:hover { color: #c5ced8; }
+.footer-link:hover { color: #c5ced8; }
 
 .v-stack {
   display: flex;
@@ -264,16 +264,16 @@ footer p {
 @media screen and (min-width: 778px) {}
 
 @media screen and (min-width: 550px) {
-  .tm-special-item {
+  .special-item {
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
   }
-  .tm-special-items {
+  .special-items {
     margin-left: -10px;
     margin-right: -10px;
   }
-  .tm-page-header {
+  .page-header {
     font-size: 2.1rem;
     margin: 20px 0 35px 0;
   }
@@ -295,7 +295,7 @@ footer p {
 }
 
 @media screen and (max-width: 550px) {
-  .tm-page-header {
+  .page-header {
     font-size: 1.8rem;
     margin: 0 0 15px 0;
   }
@@ -314,21 +314,21 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
-  .tm-special-item {
+  .special-item {
     padding-left: 5px;
     padding-right: 5px;
   }
-  .tm-special-items {
+  .special-items {
     margin-left: -5px;
     margin-right: -5px;
   }
 }
 
 @media screen and (max-width: 430px) {
-  .tm-responsive-table { overflow-x: auto; }
+  .responsive-table { overflow-x: auto; }
   table { width: auto; }
-  .tm-special-items { flex-direction: column; }
-  .tm-special-item { margin-bottom: 40px; }
+  .special-items { flex-direction: column; }
+  .special-item { margin-bottom: 40px; }
   figcaption p {
     margin-bottom: 0;
     line-height: 1;
