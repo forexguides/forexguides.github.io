@@ -365,17 +365,14 @@ footer p {
   margin-bottom: 1.5rem !important;
 }
 
-.p-5 {
-  padding: 3rem !important;
-}
+.p-5 { padding: 3rem !important; }
 
-.pt-5 {
-  padding-top: 3rem !important;
-}
-
-.pt-4 {
-  padding-top: 1.5rem !important;
-}
+.pt-5 { padding-top: 3rem !important; }
+.pt-4 { padding-top: 1.5rem !important; }
+.pt-0 { padding-top: 0rem !important; }
+.pb-5 { padding-bottom: 3rem !important; }
+.pb-4 { padding-bottom: 1.5rem !important; }
+.pb-0 { padding-bottom: 0rem !important; }
 
 .py-4 {
   padding-top: 1.5rem !important;
@@ -385,10 +382,6 @@ footer p {
 .px-2 {
   padding-right: 0.5rem !important;
   padding-left: 0.5rem !important;
-}
-
-.pt-0 {
-  padding-top: 0rem !important;
 }
 
 .fs-1 {
